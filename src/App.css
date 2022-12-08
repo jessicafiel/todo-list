@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c5483;
+}
+
+.todo-app {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vmax;
+  margin: auto;
+  min-height: 500px;
+  border-radius: 15px!important;
+  background-color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  z-index: 1;
+}
+
+h1 {
+    margin: 32px 0;
+    font-size: 25px;
+    text-align: left;
+    color: #2c5483;
+}
+
+.text-list{
+  font-size: 18px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: gray;
+  font-weight: bold;
+}
+
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+}
+
+.button-add{
+    background-color: #4ca4c8;
+    border-radius: 5px;
+    width: 2.4em !important;
+    height: 2em !important ;
+    margin-left: 17em;
+    margin-top: -14em;
+    cursor: pointer;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  width: 100%!important;
+  color: black;
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: white;
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: white; 
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 17em;
+  margin-top: 0.4em;
+}
+
+.delete-icon {
+    color: white;
+    width: 1em !important;
+    height: 1em !important;
+    border-radius: 15px;
+    background-color: gray;
+    margin: 10px;
+    margin-top: -1.3em;
+}
+
