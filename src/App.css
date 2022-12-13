@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: #2b5383;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.todo-app {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  margin: auto;
+  min-height: 500px;
+  border-radius: 15px!important;
+  background-color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h1 {
+  font-size: 28px;
+  text-align: left;
+  color: #38547d;
+  font-weight: 100;
+  position: absolute;
 }
+
+.text-list{
+  font-size: 18px;
+  text-align: left;
+  color: #020202;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+
+#filled-basic::placeholder{
+  color:#414446;
+  font-weight:600;
+  font-size: 17px;
+}
+
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+}
+
+.button-add {
+  background: #5097eb;
+  border-radius: 5px;
+  width: 2.2em !important;
+  height: 1.6em !important;
+  margin-top: -1.5em;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 22rem;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  width: 100%!important;
+  color: black;
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: white;
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: white; 
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: white;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 15.5em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.delete-icon {
+  color: #8592a5;
+  height: 1.3em !important;
+  width: 2em !important;
+  margin-top: -1.3em;
+}
+
